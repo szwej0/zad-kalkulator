@@ -1,6 +1,6 @@
 Feature: Obliczenia
 
-  Scenario: Kalkulator a - b -c
+  Scenario: Odejmowanie a - b -c
     Given I am on homepage
     When I follow "Odejmowanie by shuwax"
     And I fill in "a" with "5"
