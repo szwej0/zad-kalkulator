@@ -21,4 +21,9 @@ class ConvertSpec extends ObjectBehavior
     {
         $this->setStr('LoReM')->toLower()->shouldReturn('lorem');
     }
+    
+     function it_should_convert_string_to_upper_case()
+    {
+        $this->setStr('LoReM')->toUpper()->shouldReturn('LOREM');
+    }
 }

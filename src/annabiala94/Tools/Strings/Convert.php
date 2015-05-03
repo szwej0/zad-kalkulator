@@ -22,5 +22,9 @@ class Convert
     {
         return strtolower($this->str);
     }
-}
 
+    public function toUpper()
+    {
+        return strtoupper($this->str);
+    }
+}
