@@ -4,7 +4,8 @@ namespace kustra88\Tools;
 
 class Kalkulator
 {
-	private $a;
+
+    private $a;
     private $b;
 
     public function setA($a)
