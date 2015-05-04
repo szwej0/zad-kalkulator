@@ -26,4 +26,8 @@ class ConvertSpec extends ObjectBehavior
     {
         $this->setStr('Piotrek')->toUpper()->shouldReturn('PIOTREK');
     }
+     function it_should_convert_string_to_ucfirst_case()
+    {
+        $this->setStr('piotrek')->ucfirst()->shouldReturn('Piotrek');
+    }
 }
