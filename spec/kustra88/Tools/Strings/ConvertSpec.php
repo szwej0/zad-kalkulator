@@ -21,4 +21,9 @@ class ConvertSpec extends ObjectBehavior
     {
         $this->setStr('Piotrek')->toLower()->shouldReturn('piotrek');
     }
+
+     function it_should_convert_string_to_upper_case()
+    {
+        $this->setStr('Piotrek')->toUpper()->shouldReturn('PIOTREK');
+    }
 }
