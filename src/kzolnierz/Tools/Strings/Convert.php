@@ -23,5 +23,8 @@ class Convert
     {
         return strtoupper($this->str);
     }
-    
+    public function ucfisrt()
+    {
+        return ucfirst($this->str);
+    }
 }
