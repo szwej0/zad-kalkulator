@@ -28,4 +28,9 @@ class Convert
     {
         return strtoupper($this->str);
     }
+
+    public function capitalize()
+    {
+        return ucfirst($this->str);
+    }
 }

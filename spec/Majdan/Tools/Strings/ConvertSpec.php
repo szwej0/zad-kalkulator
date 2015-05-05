@@ -26,4 +26,9 @@ class ConvertSpec extends ObjectBehavior
     {
         $this->setStr('lorem')->toUpper()->shouldReturn('LOREM');
     }
+
+    function it_should_convert_string_to_capitalize()
+    {
+        $this->setStr('lorem')->capitalize()->shouldReturn('Lorem');
+    }
 }
