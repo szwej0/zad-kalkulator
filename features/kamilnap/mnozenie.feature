@@ -2,7 +2,7 @@ Feature: Obliczenia
 
   Scenario: Mnozenie a*b*c*d
     Given I am on homepage
-    When I follow "Mnozenie by annabiala94"
+    When I follow "Mnozenie by kamilnap"
     And I fill in "a" with "1"
     And I fill in "b" with "2"
     And I fill in "c" with "3"
