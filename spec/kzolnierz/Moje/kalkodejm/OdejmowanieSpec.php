@@ -11,4 +11,15 @@ class OdejmowanieSpec extends ObjectBehavior
     {
         $this->shouldHaveType('kzolnierz\Moje\kalkodejm\Odejmowanie');
     }
+    
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(5)->getA()->shouldReturn(5);
+        $this->setB(7)->getB()->shouldReturn(7);
+    }
+    
+    function it_should_calculate_subtraction()
+    {
+    $this->setA(5)->setB(7)->subtraction()->shouldReturn(-2);
+    }
 }
