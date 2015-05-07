@@ -101,7 +101,8 @@ script:
 #  When debugging use just one test and dump the contents
 #  - bin/behat --verbose features/home.feature
 
-  - bin/behat --verbose --stop-on-failure
+#  - bin/behat --verbose --stop-on-failure
+  - bin/phpspec run -vvv
 
 notifications:
   email: false
