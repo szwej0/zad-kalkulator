@@ -11,4 +11,9 @@ class RectangleSpec extends ObjectBehavior
     {
         $this->shouldHaveType('furtakm\Tools\Rectangle');
     }
+    
+    function it_should_calculate_rectangle_area()
+    {
+        $this->setA(5)->setB(7)->rectangle()->shouldReturn(35);
+    }
 }
