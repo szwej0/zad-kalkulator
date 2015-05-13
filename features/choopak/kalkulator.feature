@@ -2,7 +2,7 @@ Feature: Obliczenia
 
   Scenario: Kalkulator a + b
     Given I am on homepage
-    When I follow "Kalkulator by furtakm"
+    When I follow "Kalkulator by choopak"
     And I fill in "a" with "5"
     And I fill in "b" with "7"
     And I press "Oblicz"
