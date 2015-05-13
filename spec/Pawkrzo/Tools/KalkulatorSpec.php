@@ -11,4 +11,13 @@ class KalkulatorSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Pawkrzo\Tools\Kalkulator');
     }
+     function it_should_have_setter_and_gettter()
+    {
+        $this->setA(444)->getA()->shouldReturn(444);
+        $this->setB(666)->getB()->shouldReturn(666);
+    }
+    function it_should_calculate_sum()
+{
+    $this->setA(4)->setB(6)->sum()->shouldReturn(10);
+}
 }
