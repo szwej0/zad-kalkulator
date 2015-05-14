@@ -2,10 +2,11 @@
 
 namespace krzysztof90\Tools;
 
-class Kalkulator
+class Prostop
 {
     private $a;
     private $b;
+    private $c;
 
     public function setA($a)
     {
@@ -21,10 +22,16 @@ class Kalkulator
         return $this;
     }
 
-
-    public function sum()
+    public function setC($c)
     {
-        return $this->a + $this->b;
+        $this->c = $c;
+
+        return $this;
+    }
+    
+    public function volume()
+    {
+        return $this->a * $this->b * $this->c ;
     }
 
     public function getA()
@@ -37,4 +44,8 @@ class Kalkulator
         return $this->b;
     }
 
+    public function getC()
+    {
+        return $this->c;
+    }
 }

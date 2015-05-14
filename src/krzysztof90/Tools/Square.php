@@ -2,7 +2,7 @@
 
 namespace krzysztof90\Tools;
 
-class Kalkulator
+class Square
 {
     private $a;
     private $b;
@@ -22,9 +22,9 @@ class Kalkulator
     }
 
 
-    public function sum()
+    public function area()
     {
-        return $this->a + $this->b;
+        return $this->a * $this->b;
     }
 
     public function getA()
