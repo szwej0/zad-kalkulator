@@ -7,23 +7,23 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-use AppBundle\Form\krzysztof90KalkulatorType;
-use krzysztof90\Tools\Kalkulator;
+use AppBundle\Form\krzysztof90SquareType;
+use krzysztof90\Tools\Square;
 
 
-class krzysztof90KalkulatorController extends Controller
+class krzysztof90SquareController extends Controller
 {
 
     /**
-     * @Route("/krzysztof90/kalkulator/show/form", name="krzysztof90_kalkulator_show_form")
+     * @Route("/krzysztof90/square/show/form", name="krzysztof90_square_show_form")
      */
     public function showFormAction()
     {
-        $kalkulator = new Kalkulator();
-        $form = $this->createCreateForm($kalkulator);
+        $square = new Square();
+        $form = $this->createCreateForm($square);
 
         return $this->render(
-            'AppBundle:krzysztof90Kalkulator:form.html.twig',
+            'AppBundle:krzysztof90Square:form.html.twig',
             array(
                 'form' => $form->createView()
             )
@@ -31,26 +31,26 @@ class krzysztof90KalkulatorController extends Controller
     }
 
     /**
-     * @Route("/krzysztof90/kalkulator/calc", name="krzysztof90_kalkulator_licz")
+     * @Route("/krzysztof90/square/calc", name="krzysztof90_square_licz")
      * @Method("POST")
      */
     public function calculateAction(Request $request)
     {
-        $kalkulator = new Kalkulator();
-        $form = $this->createCreateForm($kalkulator);
+        $square = new Square();
+        $form = $this->createCreateForm($square);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
 
             return $this->render(
-                'AppBundle:krzysztof90Kalkulator:wynik.html.twig',
-                array('wynik' => $kalkulator->sum())
+                'AppBundle:krzysztof90Square:wynik.html.twig',
+                array('wynik' => $square->area())
             );
 
         }
 
         return $this->render(
-            'AppBundle:krzysztof90Kalkulator:form.html.twig',
+            'AppBundle:krzysztof90Square:form.html.twig',
             array(
                 'form' => $form->createView()
             )
@@ -60,14 +60,14 @@ class krzysztof90KalkulatorController extends Controller
     /**
      * Creates a form...
      *
-     * @param Kalkulator $kalkulator The object
+     * @param Square $square The object
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createCreateForm(Kalkulator $kalkulator)
+    private function createCreateForm(Square $square)
     {
-        $form = $this->createForm(new krzysztof90KalkulatorType(), $kalkulator, array(
-            'action' => $this->generateUrl('krzysztof90_kalkulator_licz'),
+        $form = $this->createForm(new krzysztof90SquareType(), $square, array(
+            'action' => $this->generateUrl('krzysztof90_square_licz'),
             'method' => 'POST',
         ));
 
