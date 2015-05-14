@@ -7,4 +7,4 @@ Feature: Obliczenia
     And I fill in "B" with "3"
     And I fill in "C" with "2"
     And I press "Oblicz"
-    Then I should see "Wynik wynosi 24"
+    Then I should see "Wynik wynosi: 24"
