@@ -5,4 +5,4 @@ Feature: Obliczenia
     When I follow "Pole kwadratu by kzolnierz"
     And I fill in "A" with "5"
     And I press "Oblicz"
-    Then I should see "Wynik wynosi 25"
+    Then I should see "Wynik wynosi: 25"
