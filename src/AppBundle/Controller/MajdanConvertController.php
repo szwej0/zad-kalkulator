@@ -66,7 +66,7 @@ class MajdanConvertController extends Controller
      */
     private function createCreateForm(Convert $conv)
     {
-        $form = $this->createForm(new MajanConvertType(), $conv, array(
+        $form = $this->createForm(new MajdanConvertType(), $conv, array(
             'action' => $this->generateUrl('majdan_convert_run'),
             'method' => 'POST',
         ));
