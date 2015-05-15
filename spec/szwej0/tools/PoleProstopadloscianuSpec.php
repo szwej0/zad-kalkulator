@@ -11,4 +11,15 @@ class PoleProstopadloscianuSpec extends ObjectBehavior
     {
         $this->shouldHaveType('szwej0\Tools\PoleProstopadloscianu');
     }
+
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(123)->getA()->shouldReturn(123);
+        $this->setB(987)->getB()->shouldReturn(987);
+        $this->setH(433)->getH()->shouldReturn(433);
+    }
+    function it_should_calculate_objPP()
+    {
+        $this->setA(3)->setB(4)->setH(5)->objPP()->shouldReturn(60);
+    }
 }
