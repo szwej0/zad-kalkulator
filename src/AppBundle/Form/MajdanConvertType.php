@@ -15,7 +15,7 @@ class MajdanConvertType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('str', 'text', array('label' => 'Podaj napis'))
+           ->add('str', 'text', array('label' => 'Napis'))
         ;
     }
     
