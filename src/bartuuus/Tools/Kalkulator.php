@@ -4,6 +4,8 @@ namespace bartuuus\Tools;
 
 class Kalkulator
 {
+    private $a;
+    private $b;
 
     public function setA($a)
     {
