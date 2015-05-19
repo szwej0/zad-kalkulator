@@ -11,4 +11,13 @@ class KalkulatorSpec extends ObjectBehavior
     {
         $this->shouldHaveType('dpyc\Tools\Kalkulator');
     }
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(234)->getA()->shouldReturn(234);
+        $this->setB(876)->getB()->shouldReturn(876);
+    }
+	function it_should_add()
+	{
+	    $this->setA(6)->setB(8)->add()->shouldReturn(14);
+	}
 }
