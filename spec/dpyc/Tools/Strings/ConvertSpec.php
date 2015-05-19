@@ -23,4 +23,9 @@ class ConvertSpec extends ObjectBehavior
     {
         $this->setStr('Damian')->toUpper()->shouldReturn('DAMIAN');
     }
+     
+     function it_should_convert_string_to_ucfirst_case()
+    {
+        $this->setStr('damian')->ucfirst()->shouldReturn('Damian');
+    }
 }

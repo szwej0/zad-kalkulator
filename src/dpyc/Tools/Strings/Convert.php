@@ -21,4 +21,8 @@ class Convert
     {
         return strtoupper($this->str);
     }
+    public function ucfirst()
+    {
+        return ucfirst($this->str);
+    }
 }
