@@ -18,4 +18,9 @@ class ConvertSpec extends ObjectBehavior
     {
         $this->setStr('Damian')->toLower()->shouldReturn('damian');
     }
+    
+     function it_should_convert_string_to_upper_case()
+    {
+        $this->setStr('Damian')->toUpper()->shouldReturn('DAMIAN');
+    }
 }
