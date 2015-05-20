@@ -11,4 +11,14 @@ class PolekwadratuSpec extends ObjectBehavior
     {
         $this->shouldHaveType('palina888\Tools\Polekwadratu');
     }
+    
+     function it_should_have_setter_and_gettter()
+    {
+        $this->setA(123)->getA()->shouldReturn(123);
+    }
+    
+    function it_should_calculate_polekwadratu()
+    {
+        $this->setA(5)->polekwadratu()->shouldReturn(25);
+    }
 }
