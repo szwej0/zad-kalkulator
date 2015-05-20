@@ -21,12 +21,4 @@ class KalkulatorSpec extends ObjectBehavior
     {
         $this->setA(5)->setB(7)->sum()->shouldReturn(12);
     }
-    function it_should_calculate_subtraction()
-    {
-        $this->setA(10)->setB(8)->subtraction()->shouldReturn(2);
-    }
-    function it_should_calculate_multiplication()
-    {
-        $this->setA(6)->setB(6)->multiplication()->shouldReturn(36);
-    }
 }
