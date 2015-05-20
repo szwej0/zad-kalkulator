@@ -1,8 +1,8 @@
 Feature: Obliczenia
 
-  Scenario: Prostopadłościan
+  Scenario: Prostopadłoscian
     Given I am on homepage
-    When I follow "Prostopadłościan by palina888"
+    When I follow "Prostopadłoscian by palina888"
     And I fill in "A" with "3"
     And I fill in "B" with "4"
     And I fill in "H" with "5"
