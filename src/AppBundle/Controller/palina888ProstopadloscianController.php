@@ -67,7 +67,7 @@ class palina888ProstopadloscianController extends Controller
     private function createCreateForm(Prostopadloscian $prostopadloscian)
     {
         $form = $this->createForm(new palina888ProstopadloscianType(), $prostopadloscian, array(
-            'action' => $this->generateUrl('Konradha9_prostopadloscian_licz'),
+            'action' => $this->generateUrl('palina888_prostopadloscian_licz'),
             'method' => 'POST',
         ));
 
