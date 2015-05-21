@@ -2,11 +2,12 @@
 
 namespace annabiala94\Tools;
 
-class Odejmowanie
+class Mnozenie
 {
     private $a;
     private $b;
     private $c;
+    private $d;
 
     public function setA($a)
     {
@@ -22,6 +23,13 @@ class Odejmowanie
         return $this;
     }
     
+     public function setD($d)
+    {
+        $this->d = $d;
+
+        return $this;
+    }
+
     public function setC($c)
     {
         $this->c = $c;
@@ -44,9 +52,14 @@ class Odejmowanie
         return $this->c;
     }
 
-
-    public function odejmowanie()
+    public function getD()
     {
-        return $this->a - $this->b - $this->c;
+        return $this->d;
+    } 
+    
+
+    public function mnozenie()
+    {
+        return $this->a * $this->b * $this->c * $this->d;
     }
 }
