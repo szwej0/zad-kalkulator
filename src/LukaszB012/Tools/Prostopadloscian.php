@@ -2,11 +2,11 @@
 
 namespace LukaszB012\Tools;
 
-class Kalkulator
+class Prostopadloscian
 {
-
     private $a;
     private $b;
+    private $h;
 
     public function setA($a)
     {
@@ -21,6 +21,13 @@ class Kalkulator
 
         return $this;
     }
+    
+     public function setH($h)
+    {
+        $this->h = $h;
+
+        return $this;
+    }
 
     public function getA()
     {
@@ -31,10 +38,14 @@ class Kalkulator
     {
         return $this->b;
     }
-
-
-    public function sum()
+    
+     public function getH()
     {
-        return $this->a + $this->b;
+        return $this->h;
+    }
+
+    public function prostopadloscian()
+    {
+         return $this->a * $this->b * $this->h;
     }
 }
