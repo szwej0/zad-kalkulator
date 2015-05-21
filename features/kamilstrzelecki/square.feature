@@ -5,4 +5,4 @@ Feature: Obliczenia
     When I follow "Pole kwadratu by kamilstrzelecki"
     And I fill in "A" with "4"
     And I press "Oblicz"
-    Then I should see "Wynik wynosi 16"
+    Then I should see "Wynik wynosi: 16"
