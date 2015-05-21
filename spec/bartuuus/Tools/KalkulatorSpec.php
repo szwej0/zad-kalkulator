@@ -11,4 +11,15 @@ class KalkulatorSpec extends ObjectBehavior
     {
         $this->shouldHaveType('bartuuus\Tools\Kalkulator');
     }
+
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(111)->getA()->shouldReturn(111);
+        $this->setB(981)->getB()->shouldReturn(981);
+    }
+
+    function it_should_calculate_sum()
+    {
+        $this->setA(8)->setB(8)->sum()->shouldReturn(16);
+    }
 }
