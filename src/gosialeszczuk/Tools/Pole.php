@@ -3,8 +3,8 @@
 namespace gosialeszczuk\Tools;
 
 class Pole
-{   private $a;
-    private $b;
+{   public $a;
+    public $b;
 
     public function setA($a)
     {
