@@ -1,11 +1,11 @@
 Feature: Obliczenia
 
-  Scenario: Kalkulator t/x/y/z
+  Scenario: Kalkulator a/b/c/d
     Given I am on homepage
-    When I follow "Kalkulator by majdan"
-    And I fill in "t" with "100"
-    And I fill in "x" with "2"
-    And I fill in "y" with "2"
-    And I fill in "z" with "5"
+    When I follow "Dzielenie by majdan"
+    And I fill in "A" with "100"
+    And I fill in "B" with "2"
+    And I fill in "C" with "2"
+    And I fill in "D" with "5"
     And I press "Oblicz"
     Then I should see "Wynik wynosi 5"
