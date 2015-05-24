@@ -11,4 +11,14 @@ class SquareSpec extends ObjectBehavior
     {
         $this->shouldHaveType('verenichvlad\Tools\Square');
     }
+
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(2)->getA()->shouldReturn(2);
+    }
+    
+    function it_should_calculate_area()
+    {
+        $this->setA(4)->area()->shouldReturn(16);
+    }
 }
