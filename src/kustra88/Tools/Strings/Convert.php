@@ -4,27 +4,27 @@ namespace kustra88\Tools\Strings;
 
 class Convert
 {
-   private $str;
+   private $text;
    
-    public function setStr($str)
+    public function setText($text)
     {
-        $this->str = $str;
+        $this->text = $text;
         return $this;
     }
-    public function getStr()
+    public function getText()
     {
-        return $this->str;
+        return $this->text;
     }
     public function toLower()
     {
-        return strtolower($this->str);
+        return strtolower($this->text);
     }
     public function toUpper()
     {
-        return strtoupper($this->str);
+        return strtoupper($this->text);
     }
     public function ucfirst()
     {
-        return ucfirst($this->str);
+        return ucfirst($this->text);
     }
 }

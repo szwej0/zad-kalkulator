@@ -14,20 +14,20 @@ class ConvertSpec extends ObjectBehavior
     
     function it_should_contain_setter_and_getter_for_a_string()
     {
-        $this->setStr('piotrek')->getStr()->shouldReturn('piotrek');
+        $this->setText('piotrek')->getText()->shouldReturn('piotrek');
     }
     
-     function it_should_convert_string_to_lower_case()
+    function it_should_convert_string_to_lower_case()
     {
-        $this->setStr('Piotrek')->toLower()->shouldReturn('piotrek');
+        $this->setText('Piotrek')->toLower()->shouldReturn('piotrek');
     }
 
-     function it_should_convert_string_to_upper_case()
+    function it_should_convert_string_to_upper_case()
     {
-        $this->setStr('Piotrek')->toUpper()->shouldReturn('PIOTREK');
+        $this->setText('Piotrek')->toUpper()->shouldReturn('PIOTREK');
     }
-     function it_should_convert_string_to_ucfirst_case()
+    function it_should_convert_string_to_ucfirst_case()
     {
-        $this->setStr('piotrek')->ucfirst()->shouldReturn('Piotrek');
+        $this->setText('piotrek')->ucfirst()->shouldReturn('Piotrek');
     }
 }
