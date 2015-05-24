@@ -11,4 +11,14 @@ class SquareSpec extends ObjectBehavior
     {
         $this->shouldHaveType('bartuuus\Tools\Square');
     }
+
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(111)->getA()->shouldReturn(111);
+    }
+
+    function it_should_calculate_area()
+    {
+        $this->setA(5)->area()->shouldReturn(25);
+    }
 }
