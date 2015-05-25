@@ -29,6 +29,6 @@ class ConvertSpec extends ObjectBehavior
     
     function it_should_convert_uc_first_case()
     {
-        $this->setStr('lorem')->ucfisrt()->shouldReturn('Lorem');
+        $this->setStr('lorem')->ucfirst()->shouldReturn('Lorem');
     }
 }
