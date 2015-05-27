@@ -11,4 +11,13 @@ class KwadratSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Mmajewski1313\Tools\Kwadrat');
     }
+        function it_should_have_setter_and_gettter()
+    {
+        $this->setA(23)->getA()->shouldReturn(23);
+    }
+    
+    function it_should_calculate_area()
+    {
+        $this->setA(4)->area()->shouldReturn(16);
+    }
 }

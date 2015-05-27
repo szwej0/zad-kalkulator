@@ -7,23 +7,23 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-use AppBundle\Form\kamilstrzeleckiSquareType;
-use kamilstrzelecki\Tools\Square;
+use AppBundle\Form\mmajewski1313KwadratType;
+use mmajewski1313\Tools\Kwadrat;
 
 
-class kamilstrzeleckiSquareController extends Controller
+class mmajewski1313KwadratController extends Controller
 {
 
     /**
-     * @Route("/kamilstrzelecki/square/show/form", name="kamilstrzelecki_square_show_form")
+     * @Route("/mmajewski1313/kwadrat/show/form", name="mmajewski1313_kwadrat_show_form")
      */
     public function showFormAction()
     {
-        $square = new Square();
-        $form = $this->createCreateForm($square);
+        $kwadrat = new Kwadrat();
+        $form = $this->createCreateForm($kwadrat);
 
         return $this->render(
-            'AppBundle:kamilstrzeleckiSquare:form.html.twig',
+            'AppBundle:mmajewski1313Kwadrat:form.html.twig',
             array(
                 'form' => $form->createView()
             )
@@ -31,26 +31,26 @@ class kamilstrzeleckiSquareController extends Controller
     }
 
     /**
-     * @Route("/kamilstrzelecki/square/calc", name="kamilstrzelecki_square_licz")
+     * @Route("/mmajewski1313/kwadrat/calc", name="mmajewski1313_kwadrat_licz")
      * @Method("POST")
      */
     public function calculateAction(Request $request)
     {
-        $square = new Square();
-        $form = $this->createCreateForm($square);
+        $kwadrat = new Kwadrat();
+        $form = $this->createCreateForm($kwadrat);
         $form->handleRequest($request);
 
         if ($form->isValid()) {
 
             return $this->render(
-                'AppBundle:kamilstrzeleckiSquare:wynik.html.twig',
-                array('wynik' => $square->area())
+                'AppBundle:mmajewski1313Kwadrat:wynik.html.twig',
+                array('wynik' => $kwadrat->area())
             );
 
         }
 
         return $this->render(
-            'AppBundle:kamilstrzeleckiSquare:form.html.twig',
+            'AppBundle:mmajewski1313Kwadrat:form.html.twig',
             array(
                 'form' => $form->createView()
             )
@@ -66,8 +66,8 @@ class kamilstrzeleckiSquareController extends Controller
      */
     private function createCreateForm(Square $square)
     {
-        $form = $this->createForm(new kamilstrzeleckiSquareType(), $square, array(
-            'action' => $this->generateUrl('kamilstrzelecki_square_licz'),
+        $form = $this->createForm(new mmajewski1313KwadratType(), $square, array(
+            'action' => $this->generateUrl('mmajewski1313_kwadrat_licz'),
             'method' => 'POST',
         ));
 

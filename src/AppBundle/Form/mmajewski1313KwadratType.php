@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
-class kamilstrzeleckiSquareType extends AbstractType
+class mmajewski1313KwadratType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -25,7 +25,7 @@ class kamilstrzeleckiSquareType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'kamilstrzelecki\Tools\Square'
+            'data_class' => 'mmajewski1313\Tools\Kwadrat'
         ));
     }
 
@@ -34,6 +34,6 @@ class kamilstrzeleckiSquareType extends AbstractType
      */
     public function getName()
     {
-        return 'appbundle_kamilstrzelecki_square';
+        return 'appbundle_mmajewski1313_kwadrat';
     }
 }
