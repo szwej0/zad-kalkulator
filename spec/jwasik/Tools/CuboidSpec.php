@@ -20,7 +20,7 @@ class CuboidSpec extends ObjectBehavior
     }
     
     function it_should_calculate_volume()
-{
-    $this->setA(2)->setB(4)->setH(6)->volume()->shouldReturn(48);
-}
+    {
+        $this->setA(2)->setB(4)->setH(6)->volume()->shouldReturn(48);
+    }
 }
