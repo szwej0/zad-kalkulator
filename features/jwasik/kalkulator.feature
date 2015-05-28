@@ -3,7 +3,7 @@ Feature: Obliczenia
   Scenario: Kalkulator a + b
     Given I am on homepage
     When I follow "Kalkulator by jwasik"
-    And I fill in "a" with "6"
-    And I fill in "b" with "3"
+    And I fill in "A" with "2"
+    And I fill in "B" with "4"
     And I press "Oblicz"
-    Then I should see "Wynik wynosi 9"
+    Then I should see "Wynik wynosi: 6"
