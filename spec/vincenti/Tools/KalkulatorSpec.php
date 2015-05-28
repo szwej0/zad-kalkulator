@@ -11,4 +11,14 @@ class KalkulatorSpec extends ObjectBehavior
     {
         $this->shouldHaveType('vincenti\Tools\Kalkulator');
     }
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setR(123)->getR()->shouldReturn(123);
+        $this->setH(987)->getH()->shouldReturn(987);
+    }
+    
+    function it_should_calculate_walec()
+    {
+    $this->setR(3)->setH(2)->sum()->shouldReturn(37.68);
+    }
 }
