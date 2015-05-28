@@ -11,4 +11,13 @@ class KalkulatorSpec extends ObjectBehavior
     {
         $this->shouldHaveType('MichalDebowski\Tools\Kalkulator');
     }
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(123)->getA()->shouldReturn(123);
+        $this->setB(987)->getB()->shouldReturn(987);
+    }
+    function it_should_calculate_pprostokata()
+    {
+        $this->setA(6)->setB(3)->pprostokata()->shouldReturn(18);
+    }
 }
