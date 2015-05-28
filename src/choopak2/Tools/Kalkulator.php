@@ -4,6 +4,7 @@ namespace choopak2\Tools;
 
 class Kalkulator
 {
+
     private $a;
     private $b;
 
@@ -30,8 +31,9 @@ class Kalkulator
     {
         return $this->b;
     }
+
     public function add()
     {
-    return $this->a + $this->b;
+        return $this->a + $this->b;
     }
 }
