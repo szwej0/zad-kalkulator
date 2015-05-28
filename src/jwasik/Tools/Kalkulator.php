@@ -31,5 +31,8 @@ class Kalkulator
         return $this->b;
     }
     
-
+    public function sum()
+    {
+        return $this->a + $this->b;
+    }
 }
