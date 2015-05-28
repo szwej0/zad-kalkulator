@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\choopa2\Tools;
+namespace spec\choopak2\Tools;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
